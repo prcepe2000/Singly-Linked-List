@@ -52,6 +52,7 @@ public class SList<E> {
     
     //Activity for June 18
     public SNode removeFirst(){
+        if (isEmpty()) return null;
         SNode<E> tempNode = head;
         head = head.getNext();
         tempNode.setNext(null);
